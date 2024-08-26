@@ -29,14 +29,14 @@ export default function ProjectCard({
   tryitoutlink,
 }: CardProps) {
   return (
-    <Card className="max-w-[485px] ">
+    <Card className="max-w-[485px]">
       <CardHeader className="flex gap-3">
         <Image
-          alt="Experience Logo"
+          alt="Project Logo"
           height={50}
           src={logoSrc}
           width={50}
-          className="rounded-md"
+          className="rounded-md w-auto h-auto max-w-[50px] max-h-[50px]"
         />
         <div className="flex flex-col">
           <p className="text-md">{title}</p>
@@ -52,11 +52,11 @@ export default function ProjectCard({
           ))}
         </ul>
 
-        <div className="flex flex-row gap-3">
+        <div className="flex flex-row gap-3 flex-wrap">
           {skills.map((skill, index) => (
             <Chip
               key={index}
-              className="mt-5"
+              className="mt-5 md:size-md size-sm"
               color="primary"
               variant="bordered"
             >
@@ -64,7 +64,8 @@ export default function ProjectCard({
             </Chip>
           ))}
         </div>
-        <div className="flex flex-row gap-3">
+
+        <div className="flex flex-row gap-3 flex-wrap">
           {githublink && (
             <div className="mt-4">
               <p>
@@ -74,8 +75,8 @@ export default function ProjectCard({
                   isExternal
                   href={githublink}
                 >
-                  Visit the Github
-                  <FaGithub className="ml-2"></FaGithub>
+                  Visit the GitHub
+                  <FaGithub className="ml-2" />
                 </Link>
               </p>
             </div>
@@ -91,7 +92,7 @@ export default function ProjectCard({
                   href={tryitoutlink}
                 >
                   Try it out!
-                  <FaExternalLinkAlt className="ml-2"></FaExternalLinkAlt>
+                  <FaExternalLinkAlt className="ml-2" />
                 </Link>
               </p>
             </div>
