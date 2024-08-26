@@ -38,7 +38,7 @@ export default function ExperienceCard({
           height={46}
           src={logoSrc}
           width={50}
-          className="rounded-md"
+          className="rounded-md w-auto h-auto max-w-[50px] max-h-[46px]"
         />
         <div className="flex flex-col">
           <p className="text-md">{title}</p>
@@ -57,11 +57,12 @@ export default function ExperienceCard({
           ))}
         </ul>
 
-        <div className="flex flex-row gap-3">
+        <div className="flex flex-row gap-3 flex-wrap">
           {skills.map((skill, index) => (
             <Chip
               key={index}
-              className="mt-3"
+              size="md" // Default size for larger screens
+              className="mt-3 md:size-md size-sm" // Smaller size on mobile
               color="primary"
               variant="bordered"
             >

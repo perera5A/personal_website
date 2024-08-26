@@ -19,7 +19,7 @@ export default function AboutMe() {
           <div className="flex flex-col">
             I watch and play a lot of sports, my favourite being Soccer. I also
             like watching F1, Hockey, and Basketball.
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-col md:flex-row gap-2">
               <Chip variant="bordered" color="danger" className="mt-3">
                 <Link
                   href="https://www.arsenal.com/fixtures"
