@@ -146,7 +146,7 @@ export default function Page() {
         <ProjectCard
           title="SnapWaste"
           logoSrc="snapwaste.jpg"
-          tryitoutlink="https://snapwaste-pbrbcy67i-perera5as-projects.vercel.app/"
+          tryitoutlink="https://snapwaste-perera5as-projects.vercel.app/"
           githublink="https://github.com/perera5A/snapwaste"
           responsibilities={[
             "An app that uses AI and Machine Learning to figure out where to throw out our trash",
