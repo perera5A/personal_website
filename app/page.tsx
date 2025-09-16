@@ -145,7 +145,7 @@ export default function Page() {
       <h3 className="mt-10 mb-5 text-3xl font-bold md:text-4xl">Projects</h3>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <ProjectCard
-          title="Real Time Radio"
+          title="Real Time Radio (SDR)"
           logoSrc="radio.jpg"
           githublink="https://github.com/perera5A/Real-Time-Radio"
           responsibilities={[
