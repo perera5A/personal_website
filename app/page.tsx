@@ -44,7 +44,7 @@ export default function Page() {
               }
             >
               <span>Add me on LinkedIn</span>
-              <FaLinkedin className="text-white" />
+              <>{<FaLinkedin className="text-white" />}</>
             </Button>
             <Button
               size="md"
