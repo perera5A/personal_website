@@ -75,15 +75,28 @@ export default function Page() {
       <h3 className="mt-8 mb-5 text-3xl font-bold md:text-4xl">Experience</h3>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <ExperienceCard
+          title="Software Developer Intern"
+          company="SOTI"
+          dateRange="May 2025 - April 2026"
+          logoSrc="SotiLogo.png"
+          websitelink="https://soti.net/products/soti-snap/"
+          responsibilities={[
+            "I work on SOTI Snap, a mobility product from SOTI that allows companies to rapidly create apps for their mobile devices.",
+            "I contribute to both developing apps for companies that use our product and enhancing the SOTI Snap platform itself.",
+          ]}
+          skills={["Java", "React", "Javascript", "Agile", "Git"]}
+        />
+
+        <ExperienceCard
           title="Service Design Intern"
           company="Ontario Public Service"
           dateRange="May 2024 - Aug 2024"
           logoSrc="opslogo.webp"
           responsibilities={[
-            "Created a prototype to organize and access provincial land data more easily for both internal and external users",
-            "Conducted user research to inform service decisions and design recommendations",
+            "Developed proof-of-concept applications for new IT projects within the ministry, including initiatives such as fishing licence renewals and wildlife tracking in Northern Ontario",
+            "Informed service decisions and design recommendations by conducting research and collaborating with stakeholders",
           ]}
-          skills={["React", "Python", "REST-APIs", "Git", "Azure"]}
+          skills={["Collaboration", "Problem-solving", "React", "Python"]}
         />
         <ExperienceCard
           title="Backend Web Developer"
@@ -92,8 +105,8 @@ export default function Page() {
           logoSrc="large-og.jpg"
           websitelink="https://www.macengsociety.ca/"
           responsibilities={[
-            "Building a web portal for managing clubs and teams for McMaster engineering students",
-            "Collaborating on tasks, including database management and server-side logic, to support the portal’s features",
+            "Developing the Clubs and Teams Portal, a new platform to help student clubs manage administrative tasks more efficiently",
+            "Collaborating in weekly Agile meetings to plan, build, and refine portal features before release to the student body",
           ]}
           skills={["NextJS", "MongoDB", "Git", "REST-APIs"]}
         />
@@ -104,22 +117,10 @@ export default function Page() {
           logoSrc="sumobot.png"
           websitelink="https://www.sumobot.ca/"
           responsibilities={[
-            "Updating our website and addressing any technical issues",
-            "Creating a registration portal for the sumobot competition, streamlining the registration process for participants",
+            "SumoBots is an annual student-run robotics competition where participants design robots to battle each other; I maintain and update the competition website.",
+            "Developing a registration portal to streamline the sign-up process for participants",
           ]}
           skills={["Javascript", "Python", "Excel", "HTML", "CSS"]}
-        />
-        <ExperienceCard
-          title="Full-Stack Developer"
-          company="Magnify Access"
-          dateRange="Dec 2023 - April 2024"
-          logoSrc="magnify.jpg"
-          websitelink="https://www.magnifyaccess.ai/"
-          responsibilities={[
-            "Helped develop a job connection app to aid Toronto high school students with their co-op search",
-            "The focus was on user accessibility and convenience",
-          ]}
-          skills={["PHP", "React", "Jira", "HTML", "Git"]}
         />
       </div>
 
@@ -131,7 +132,7 @@ export default function Page() {
           className="w-full md:w-auto px-4 py-3"
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/1PB7zIjuHXdpUFA1KWZzTPTyZBDS4qml1/view?usp=sharing",
+              "https://drive.google.com/file/d/1PC281VKxvdcWAayeI4q6Ca4pXJnshyIC/view?usp=sharing",
               "_blank"
             )
           }
@@ -144,16 +145,16 @@ export default function Page() {
       <h3 className="mt-10 mb-5 text-3xl font-bold md:text-4xl">Projects</h3>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <ProjectCard
-          title="SnapWaste"
-          logoSrc="snapwaste.jpg"
-          tryitoutlink="https://snapwaste-perera5as-projects.vercel.app/"
-          githublink="https://github.com/perera5A/snapwaste"
+          title="Real Time Radio"
+          logoSrc="radio.jpg"
+          githublink="https://github.com/perera5A/Real-Time-Radio"
           responsibilities={[
-            "An app that uses AI and Machine Learning to figure out where to throw out our trash",
-            "Aimed to create an accessible tool to help individuals make better disposal decisions",
+            "Built a Software Defined Radio (SDR) on a Raspberry Pi using C++ and Python to process FM radio signals",
+            "It was incredibly exciting to hear actual radio stations come to life through code—I loved seeing our software transform raw signals into music and voices in real time!",
           ]}
-          skills={["React", "Python", "APIs", "HTML", "Git"]}
+          skills={["C++", "Python", "Raspberry Pi", "Multithreading"]}
         />
+
         <ProjectCard
           title="Wordle Clone"
           logoSrc="wordle.png"

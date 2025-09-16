@@ -8,6 +8,22 @@ export default function AboutMe() {
     <div className="mt-auto mb-10">
       <Accordion selectionMode="multiple">
         <AccordionItem
+          key="2"
+          title={
+            <div className="flex items-center gap-2">
+              Courses I am currently taking while on CO-OP
+              <FaBook />
+            </div>
+          }
+        >
+          <div className="flex flex-col gap-4">
+            <Chip variant="bordered" color="default">
+              Ethics, Equity and Law in Engineering 4A03
+            </Chip>
+          </div>
+        </AccordionItem>
+
+        <AccordionItem
           key="1"
           title={
             <div className="flex items-center gap-2">
@@ -57,32 +73,6 @@ export default function AboutMe() {
                 </Link>
               </Chip>
             </div>
-          </div>
-        </AccordionItem>
-        <AccordionItem
-          key="2"
-          title={
-            <div className="flex items-center gap-2">
-              Courses I am currently taking <FaBook />
-            </div>
-          }
-        >
-          <div className="flex flex-col gap-4">
-            <Chip variant="bordered" color="default">
-              Software Development 3K04
-            </Chip>
-            <Chip variant="bordered" color="default">
-              Digital Systems Design 3DQ5
-            </Chip>
-            <Chip variant="bordered" color="default">
-              Electronic Devices & Circuits 2 3EJ4
-            </Chip>
-            <Chip variant="bordered" color="default">
-              Advanced Probability & Random Processes 3TQ3
-            </Chip>
-            <Chip variant="bordered" color="default">
-              Signals & Systems 3TP3
-            </Chip>
           </div>
         </AccordionItem>
       </Accordion>

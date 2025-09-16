@@ -29,7 +29,7 @@ export default function ProjectCard({
   tryitoutlink,
 }: CardProps) {
   return (
-    <Card className="max-w-[485px]">
+    <Card className="max-w-[500px]">
       <CardHeader className="flex gap-3">
         <Image
           alt="Project Logo"
