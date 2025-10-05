@@ -132,7 +132,7 @@ export default function Page() {
           className="w-full md:w-auto px-4 py-3"
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/1tAVEUpfyf8krMO1lacApDwOCNgn_Z1N9/view?usp=sharing",
+              "https://drive.google.com/file/d/1zXJspqE9OzG4-DoSKNMqI9XNs82CkBul/view?usp=sharing",
               "_blank"
             )
           }
