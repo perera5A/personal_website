@@ -11,14 +11,26 @@ export default function AboutMe() {
           key="2"
           title={
             <div className="flex items-center gap-2">
-              Courses I am currently taking while on CO-OP
+              Courses I am currently taking
               <FaBook />
             </div>
           }
         >
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-row flex-wrap gap-2">
             <Chip variant="bordered" color="default">
-              Ethics, Equity and Law in Engineering 4A03
+              Fundamentals of Machine Learning 4SL4
+            </Chip>
+            <Chip variant="bordered" color="default">
+              Computer Communication Networks 4DK4
+            </Chip>
+            <Chip variant="bordered" color="default">
+              Computer Architecture 4DM4
+            </Chip>
+            <Chip variant="bordered" color="default">
+              High-Performance Programming 4SP4
+            </Chip>
+            <Chip variant="bordered" color="default">
+              Engineering Design 4OI6A
             </Chip>
           </div>
         </AccordionItem>

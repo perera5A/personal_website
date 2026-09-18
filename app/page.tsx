@@ -16,7 +16,7 @@ export default function Page() {
       <section className="flex flex-col items-center gap-4 pt-6 md:flex-row md:gap-6">
         <div className="relative h-[100px] w-[100px] md:h-[160px] md:w-[160px]">
           <Image
-            src="/myface.jpg"
+            src="/myface.png"
             className="rounded-[8px] border border-lightGrey object-cover"
             alt="Profile picture"
             fill={true}
@@ -76,15 +76,39 @@ export default function Page() {
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <ExperienceCard
           title="Software Developer Intern"
-          company="SOTI"
-          dateRange="May 2025 - April 2026"
-          logoSrc="SotiLogo.png"
-          websitelink="https://soti.net/products/soti-snap/"
+          company="Criteo"
+          dateRange="May 2026 - Aug 2026"
+          logoSrc="Criteo_Logo.png"
           responsibilities={[
-            "I work on SOTI Snap, a mobility product from SOTI that allows companies to rapidly create apps for their mobile devices.",
-            "I contribute to both developing apps for companies that use our product and enhancing the SOTI Snap platform itself.",
+            "I led a redesign of part of Criteo's Retail Media platform, simplifying how the app talks to its backend to make pages noticeably faster for users.",
+            "I built and shipped new backend features that were used thousands of times in their first week with no issues.",
           ]}
-          skills={["Java", "React", "Javascript", "Agile", "Git"]}
+          skills={["C#", "Angular", "TypeScript", "NUnit", "REST-APIs"]}
+        />
+
+        <ExperienceCard
+          title="Software Developer Intern"
+          company="SOTI"
+          dateRange="May 2025 - May 2026"
+          logoSrc="SotiLogo.png"
+          responsibilities={[
+            "I build backend services that handle over a thousand requests a day and helped launch several new features from start to finish.",
+            "I work closely with designers, QA, and product managers to turn ideas into finished tools, contributing to over $10,000 worth of custom mobile apps for clients.",
+          ]}
+          skills={["C#", "SQL", "Angular", "TypeScript", "Agile", "Git"]}
+        />
+
+        <ExperienceCard
+          title="Web Team Manager"
+          company="McMaster Engineering Society"
+          dateRange="June 2024 - Present"
+          logoSrc="large-og.jpg"
+          websitelink="https://www.macengsociety.ca/"
+          responsibilities={[
+            "Leading a team of student developers building a Clubs and Teams Portal to help 1,000+ engineering students manage their club activities.",
+            "Reviewing my team's code and building the backend that powers the portal, all in a collaborative, agile environment.",
+          ]}
+          skills={["Leadership", "MongoDB", "Node.js", "TypeScript"]}
         />
 
         <ExperienceCard
@@ -93,34 +117,10 @@ export default function Page() {
           dateRange="May 2024 - Aug 2024"
           logoSrc="opslogo.webp"
           responsibilities={[
-            "Developed proof-of-concept applications for new IT projects within the ministry, including initiatives such as fishing licence renewals and wildlife tracking in Northern Ontario",
-            "Informed service decisions and design recommendations by conducting research and collaborating with stakeholders",
+            "I designed and presented a prototype tool to upper management that made it much easier to find and organize provincial land records.",
+            "My work helped simplify a process used by over 500 people across the ministry.",
           ]}
-          skills={["Collaboration", "Problem-solving", "React", "Python"]}
-        />
-        <ExperienceCard
-          title="Backend Web Developer"
-          company="McMaster Engineering Society"
-          dateRange="June 2024 - Present"
-          logoSrc="large-og.jpg"
-          websitelink="https://www.macengsociety.ca/"
-          responsibilities={[
-            "Developing the Clubs and Teams Portal, a new platform to help student clubs manage administrative tasks more efficiently",
-            "Collaborating in weekly Agile meetings to plan, build, and refine portal features before release to the student body",
-          ]}
-          skills={["NextJS", "MongoDB", "Git", "REST-APIs"]}
-        />
-        <ExperienceCard
-          title="Web Development Executive"
-          company="McMaster Sumobots Competition"
-          dateRange="August 2024 - Present"
-          logoSrc="sumobot.png"
-          websitelink="https://www.sumobot.ca/"
-          responsibilities={[
-            "SumoBots is an annual student-run robotics competition where participants design robots to battle each other; I maintain and update the competition website.",
-            "Developing a registration portal to streamline the sign-up process for participants",
-          ]}
-          skills={["Javascript", "Python", "Excel", "HTML", "CSS"]}
+          skills={["Java", "Angular", "SQL", "Git"]}
         />
       </div>
 
@@ -130,12 +130,7 @@ export default function Page() {
           color="primary"
           variant="ghost"
           className="w-full md:w-auto px-4 py-3"
-          onClick={() =>
-            window.open(
-              "https://drive.google.com/file/d/1-T_aYkXfhEnKEs9Wpo5OOpvmLVPLyfgu/view?usp=sharing",
-              "_blank"
-            )
-          }
+          onClick={() => window.open("/AnujaPereraResume.pdf", "_blank")}
         >
           <span>Look at my Resume for more Details</span>
           <FaFileAlt className="ml-2 text-white" />
