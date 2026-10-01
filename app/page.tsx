@@ -39,7 +39,7 @@ export default function Page() {
               onClick={() =>
                 window.open(
                   "https://www.linkedin.com/in/anuja-perera/",
-                  "_blank"
+                  "_blank",
                 )
               }
             >
@@ -130,7 +130,7 @@ export default function Page() {
           color="primary"
           variant="ghost"
           className="w-full md:w-auto px-4 py-3"
-          onClick={() => window.open("/AnujaPereraResume.pdf", "_blank")}
+          onClick={() => window.open("/Anuja_Perera_Resume.pdf", "_blank")}
         >
           <span>Look at my Resume for more Details</span>
           <FaFileAlt className="ml-2 text-white" />
