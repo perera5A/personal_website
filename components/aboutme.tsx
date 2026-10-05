@@ -9,6 +9,7 @@ export default function AboutMe() {
       <Accordion selectionMode="multiple">
         <AccordionItem
           key="2"
+          textValue="Courses I am currently taking"
           title={
             <div className="flex items-center gap-2">
               Courses I am currently taking
@@ -37,6 +38,7 @@ export default function AboutMe() {
 
         <AccordionItem
           key="1"
+          textValue="My favourite sports teams"
           title={
             <div className="flex items-center gap-2">
               My favourite sports teams
@@ -59,7 +61,7 @@ export default function AboutMe() {
               </Chip>
               <Chip variant="bordered" color="warning" className="mt-3">
                 <Link
-                  href="https://www.mclaren.com/racing/formula-1/2024/schedule/"
+                  href="https://www.mclaren.com/racing/formula-1/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

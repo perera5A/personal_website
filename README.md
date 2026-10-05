@@ -1,53 +1,35 @@
-# Next.js & NextUI Template
+# anujaperera.ca
 
-This is a template for creating applications using Next.js 14 (app directory) and NextUI (v2).
+My personal portfolio website: [www.anujaperera.ca](https://www.anujaperera.ca)
 
-[Try it on CodeSandbox](https://githubbox.com/nextui-org/next-app-template)
+## Tech Stack
 
-## Technologies Used
-
-- [Next.js 14](https://nextjs.org/docs/getting-started)
+- [Next.js 14](https://nextjs.org/) (App Router)
 - [NextUI v2](https://nextui.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+- [next-themes](https://github.com/pacocoursey/next-themes) for light/dark mode
 
-## How to Use
-
-### Use the template with create-next-app
-
-To create a new project based on this template using `create-next-app`, run the following command:
-
-```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
-```
-
-### Install dependencies
-
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+## Running Locally
 
 ```bash
 npm install
-```
-
-### Run the development server
-
-```bash
 npm run dev
 ```
 
-### Setup pnpm (optional)
+Then open [http://localhost:3000](http://localhost:3000).
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+## Project Structure
 
-```bash
-public-hoist-pattern[]=*@nextui-org/*
-```
+- `app/page.tsx` – all page content (experience, leadership, projects)
+- `components/` – experience/project cards, skills, about section, theme switch
+- `config/site.ts` – site name, URL, and description used for metadata
+- `public/` – images and `Anuja_Perera_Resume.pdf`
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+## Updating the Resume
+
+Replace `public/AnujaPereraResume.pdf` with the new PDF (keep the same file name).
 
 ## License
 
-Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
+[MIT](LICENSE)

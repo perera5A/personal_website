@@ -8,15 +8,24 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords:
-    "Anuja Perera, McMaster University, OPS, Ontario Public Service, Personal Website, Software Developer, Fullstack Developer, Computer Engineering, DeltaHacks, McMaster Engineering Society, McMaster Sumobotts",
+    "Anuja Perera, McMaster University, Computer Engineering, Software Developer, Fullstack Developer, Criteo, SOTI, Ontario Public Service, McMaster Engineering Society",
   creator: "Anuja Perera",
   authors: [{ name: "Anuja Perera" }],
+  icons: { icon: "/favicon-32x32.png" },
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    type: "website",
+    images: ["/myface.jpg"],
+  },
 };
 
 export const viewport: Viewport = {
@@ -33,11 +42,6 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head>
-        <link rel="icon" href="/favicon-32x32.png" />
-        <title>{siteConfig.name}</title>
-        <meta name="description" content={siteConfig.description} />
-      </head>
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
